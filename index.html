@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ataques do Herói</title>
+  <link rel="stylesheet" href="./styl.css">
+</head>
+
+<body>
+  <section class="afterRes">
+    <h1>Crie seu Herói</h1>
+    <div>
+      <label for="heroName">Nome do Herói:</label>
+      <input type="text" name="heroName" id="heroName">
+    </div>
+
+    <div>
+      <label for="heroAge">Idade do Herói:</label>
+      <input type="number" name="heroAge" id="heroAge">
+    </div>
+
+    <div>
+      <label for="heroType">Tipo do Herói:</label>
+      <div class="radioGroup">
+        <div class="radioOption">
+          <input type="radio" name="heroType" id="heroType1" value="mago" checked>
+          <label for="heroType1">Mago</label>
+        </div>
+
+        <div class="radioOption">
+          <input type="radio" name="heroType" id="heroType2" value="guerreiro">
+          <label for="heroType2">Guerreiro</label>
+        </div>
+
+        <div class="radioOption">
+          <input type="radio" name="heroType" id="heroType3" value="monge">
+          <label for="heroType3">Monge</label>
+        </div>
+
+        <div class="radioOption">
+          <input type="radio" name="heroType" id="heroType4" value="ninja">
+          <label for="heroType4">Ninja</label>
+        </div>
+      </div>
+    </div>
+    <input class="sizeInput btn" type="button" value="Criar Herói" onClick="createHero()">
+  </section>
+  <div class="heroStatus">
+    <h1>Nome Herói</h1>
+    <p>Idade: </p>
+    <span>🧙‍♂️</span>
+    <input class="btn" type="button" value="Atacar" onClick="heroAtack()">
+    <input class="btn2" type="button" value="Testar outro Herói" onClick="location.reload()">
+    <div class="result"></div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
